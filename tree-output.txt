@@ -1,0 +1,223 @@
+projet-1
+├── .env
+├── .git
+├── .gitignore
+├── .next
+├── components.json
+├── eslint.config.mjs
+├── next-env.d.ts
+├── next.config.ts
+├── node_modules
+├── package-lock.json
+├── package.json
+├── postcss.config.mjs
+├── prisma
+│   ├── migrations
+│   │   ├── 20250221164113_init
+│   │   │   └── migration.sql
+│   │   ├── 20250221165400_
+│   │   │   └── migration.sql
+│   │   ├── 20250302132631_
+│   │   │   └── migration.sql
+│   │   ├── 20250302132957_
+│   │   │   └── migration.sql
+│   │   ├── 20250308212121_
+│   │   │   └── migration.sql
+│   │   ├── 20250330152912_
+│   │   │   └── migration.sql
+│   │   ├── 20250330185759_
+│   │   │   └── migration.sql
+│   │   ├── 20250331182156_fix_created_at
+│   │   │   └── migration.sql
+│   │   ├── 20250401110645_init
+│   │   │   └── migration.sql
+│   │   ├── 20250415160159_
+│   │   │   └── migration.sql
+│   │   ├── 20250422052337_add_limit_to_product
+│   │   │   └── migration.sql
+│   │   ├── 20250422052607_add_limit_to_product
+│   │   │   └── migration.sql
+│   │   └── migration_lock.toml
+│   └── schema.prisma
+├── public
+│   ├── 2.png
+│   ├── banner1.png
+│   ├── FashionImage-1.png
+│   ├── FashionImage-2.png
+│   ├── FashionImage-3.png
+│   ├── file.svg
+│   ├── Frame 75.png
+│   ├── globe.svg
+│   ├── Herro Banner.jpg
+│   ├── logo.png
+│   ├── next.svg
+│   ├── offer-back.png
+│   ├── offer-bg.png
+│   ├── offer-img.png
+│   ├── product-1.png
+│   ├── product-10.png
+│   ├── product-11.png
+│   ├── product-2.png
+│   ├── product-3.png
+│   ├── product-4.png
+│   ├── product-5.png
+│   ├── product-6.png
+│   ├── product-7.png
+│   ├── product-8.png
+│   ├── product-9.png
+│   ├── uploads
+│   │   ├── 1744805116979-Screenshot 2025-02-24 093959.png
+│   │   ├── 1744805339453-Screenshot_2025-02-05_090417.png
+│   │   └── 1744805469676-Screenshot_2025-02-05_090417.png
+│   ├── vercel.svg
+│   └── window.svg
+├── README.md
+├── src
+│   ├── app
+│   │   ├── api
+│   │   │   ├── auth
+│   │   │   ├── checkout
+│   │   │   └── upload
+│   │   ├── not-found.tsx
+│   │   └── [locale]
+│   │       ├── (auth)
+│   │       ├── (customerFacing)
+│   │       ├── actions
+│   │       ├── admin
+│   │       ├── auth
+│   │       ├── cacheing
+│   │       ├── cart
+│   │       ├── checkout
+│   │       ├── favicon.ico
+│   │       ├── globals.css
+│   │       ├── layout.tsx
+│   │       ├── menu
+│   │       ├── page.tsx
+│   │       ├── profile
+│   │       ├── stripe
+│   │       ├── success
+│   │       └── _components
+│   ├── assets
+│   │   ├── images
+│   │   │   ├── hero.jpeg
+│   │   │   ├── right.svg
+│   │   │   └── watch.svg
+│   │   └── videos
+│   │       ├── explore.mp4
+│   │       ├── frame.mp4
+│   │       ├── hero.mp4
+│   │       ├── highlight-first.mp4
+│   │       ├── hightlight-fourth.mp4
+│   │       ├── hightlight-sec.mp4
+│   │       ├── hightlight-third.mp4
+│   │       └── smallHero.mp4
+│   ├── components
+│   │   ├── display products
+│   │   │   └── indxe.tsx
+│   │   ├── edit-user-form
+│   │   │   ├── index.tsx
+│   │   │   └── _actions
+│   │   ├── from-fields
+│   │   │   ├── checkbox.tsx
+│   │   │   ├── from-fieds.tsx
+│   │   │   ├── PasswordField.tsx
+│   │   │   └── TextField.tsx
+│   │   ├── header
+│   │   │   ├── auth-buttons.tsx
+│   │   │   ├── CartButton.tsx
+│   │   │   ├── Footer.tsx
+│   │   │   ├── index.tsx
+│   │   │   ├── Navbar.tsx
+│   │   │   └── Profile.tsx
+│   │   ├── ImageUploader.tsx
+│   │   ├── link
+│   │   │   └── index.tsx
+│   │   ├── main-heading
+│   │   │   ├── Highlihts.tsx
+│   │   │   ├── Horo.tsx
+│   │   │   ├── index.tsx
+│   │   │   ├── ThreeScene.tsx
+│   │   │   └── VideoCarousel.tsx
+│   │   ├── menu
+│   │   │   ├── AddToCartButton.tsx
+│   │   │   ├── cartSlice.ts
+│   │   │   ├── index.tsx
+│   │   │   └── Menultem.tsx
+│   │   ├── PageLoader.tsx
+│   │   ├── public
+│   │   │   └── model.glb
+│   │   ├── Separated
+│   │   │   └── Separateds.tsx
+│   │   ├── ui
+│   │   │   ├── accordion.tsx
+│   │   │   ├── aspect-ratio.tsx
+│   │   │   ├── button.tsx
+│   │   │   ├── card.tsx
+│   │   │   ├── checkbox.tsx
+│   │   │   ├── dialog.tsx
+│   │   │   ├── input.tsx
+│   │   │   ├── Label.tsx
+│   │   │   ├── loader.tsx
+│   │   │   ├── progress.tsx
+│   │   │   ├── radio-group.tsx
+│   │   │   ├── select.tsx
+│   │   │   ├── sonner.tsx
+│   │   │   ├── textarea.tsx
+│   │   │   ├── toast.tsx
+│   │   │   └── uploadImage.ts
+│   │   └── utils
+│   │       ├── animations.js
+│   │       ├── declarations.d.ts
+│   │       └── index.ts
+│   ├── constants
+│   │   └── enums.ts
+│   ├── dictionaries
+│   │   ├── ar.json
+│   │   └── en.json
+│   ├── hooks
+│   │   ├── use-toast.ts
+│   │   ├── useClientSession.tsx
+│   │   └── useFormFields.ts
+│   ├── i18n.config.ts
+│   ├── lib
+│   │   ├── cache.ts
+│   │   ├── cart.ts
+│   │   ├── cloudinary.ts
+│   │   ├── formatters.ts
+│   │   ├── getCurrentLocale.ts
+│   │   ├── loader.tsx
+│   │   ├── prisma.ts
+│   │   ├── translation.ts
+│   │   └── utils.ts
+│   ├── middleware.ts
+│   ├── providers
+│   │   ├── NextAuthSessionProvider.tsx
+│   │   └── ReduxProvider.tsx
+│   ├── redux
+│   │   ├── features
+│   │   │   └── cart
+│   │   ├── hooks.ts
+│   │   └── store.ts
+│   ├── server
+│   │   ├── auth.ts
+│   │   ├── db
+│   │   │   ├── categories.ts
+│   │   │   ├── db.ts
+│   │   │   ├── products.ts
+│   │   │   └── users.ts
+│   │   └── _actions
+│   │       └── auth.ts
+│   ├── types
+│   │   ├── app.ts
+│   │   ├── product.ts
+│   │   └── translations.ts
+│   └── validations
+│       ├── auth.ts
+│       ├── category.ts
+│       ├── product.ts
+│       └── profile.ts
+├── tailwind.config.ts
+├── tree-clean.txt
+├── tree-generator.js
+├── tree.txt
+└── tsconfig.json

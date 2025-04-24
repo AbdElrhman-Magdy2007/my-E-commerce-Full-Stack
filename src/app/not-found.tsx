@@ -1,17 +1,12 @@
+// src/app/[locale]/not-found.tsx
 import Link from "next/link";
 
-function NotFound() {
+export default function NotFound() {
   return (
-    <html>
-      <body>
-        <div>
-          <h2>Not Found</h2>
-          <p>Could not find requested resource</p>
-          <Link href="/">Home</Link>
-        </div>
-      </body>
-    </html>
+    <div>
+      <h2>Not Found</h2>
+      <p>Could not find requested resource</p>
+      <Link href="/">Home</Link>
+    </div>
   );
 }
-
-export default NotFound;
