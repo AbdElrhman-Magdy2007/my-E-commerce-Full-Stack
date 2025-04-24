@@ -1,0 +1,289 @@
+{
+  "item": {
+    "title": "العنصر",
+    "description": "هذه هي وصف العنصر.",
+    "categoryId": {
+      "name": "الفئة"
+    }
+  },
+  "extrasIngredients": {
+    "title": "الإضافات والمكونات",
+    "description": "خصص طلبك مع مجموعتنا من الإضافات والمكونات."
+  },
+  "menu": {
+    "title": "القائمة",
+    "description": "استكشف عروضنا اللذيذة!"
+  },
+  "noProductsAvailable": "لا توجد منتجات متاحة",
+  "noProductsFound": "لم يتم العثور على منتجات",
+  "buttons": {
+    "login": {
+      "submit": "تسجيل الدخول"
+    }
+  },
+  "create": "إنشاء",
+  "save": "حفظ",
+  "delete": "حذف",
+  "cancel": "إلغاء",
+  "sizes": "الأحجام",
+  "name": "الاسم",
+  "extraPrice": "السعر الإضافي",
+  "noCategoriesFound": "لم يتم العثور على فئات",
+  "admin": {
+    "menuItems": {
+      "edit": "تعديل",
+      
+      "imageValidation": {
+        "required": "الصورة مطلوبة.",
+        "invalid": "تنسيق الصورة غير صالح.",
+        "size": "يجب أن يكون حجم الصورة أقل من 2 ميجابايت."
+      },
+      "createNewMenuItem": "إنشاء عنصر قائمة جديد",
+      "addItemSize": "إضافة حجم للعنصر",
+      "addExtraItem": "إضافة عنصر إضافي"
+    },
+    "categories": {
+      "form": {
+        "category": {
+          "label": "الفئة",
+          "validation": {
+            "required": "الفئة مطلوبة.",
+            "invalid": "تنسيق الفئة غير صالح."
+          }
+        },
+        "image": {
+          "validation": {
+            "required": "الصورة مطلوبة.",
+            "invalid": "تنسيق الصورة غير صالح.",
+            "label": "الصورة",
+            "placeholder": "تحميل صورة الفئة"
+          }
+        },
+        "description": {
+          "validation": {
+            "required": "وصف الفئة مطلوب."
+          },
+          "label": "الوصف",
+          "placeholder": "أدخل وصف الفئة"
+        },
+        "basePrice": {
+          "validation": {
+            "required": "السعر الأساسي مطلوب.",
+            "invalid": "تنسيق السعر الأساسي غير صالح."
+          },
+          "label": "السعر الأساسي",
+          "placeholder": "أدخل السعر الأساسي"
+        },
+        "editName": "تعديل الاسم",
+        "name": {
+          "validation": {
+            "required": "اسم الفئة مطلوب."
+          },
+          "label": "اسم الفئة",
+          "placeholder": "أدخل اسم الفئة"
+        }
+      }
+    },
+    "tabs": {
+      "profile": "الملف الشخصي",
+      "categories": "الفئات",
+      "menuItems": "عناصر القائمة",
+      "users": "المستخدمون",
+      "orders": "الطلبات"
+    }
+  },
+  "error": {
+    "404": "الصفحة غير موجودة",
+    "500": "خطأ داخلي في الخادم",
+    "noUser": "لا توجد بيانات مستخدم متاحة",
+    "formErrors": {
+      "fieldErrors": "أخطاء الحقول"
+    }
+  },
+  "stores": {
+    "profile": {
+      "title": "الملف الشخصي"
+    },
+    "Navbars": {
+      "home": "الرئيسية",
+      "about": "حول",
+      "contact": "اتصل بنا",
+      "store": "المتجر",
+      "logo": "الشعار",
+      "arabic": "العربية",
+      "english": "الإنجليزية",
+      "Login": "تسجيل الدخول",
+      "menu": "القائمة",
+      "signOut": "تسجيل الخروج",
+      "admin": "الإدارة",
+      "profile": "الملف الشخصي"
+    },
+    "store": {
+      "name": "متجر إلكترونيات الحاسوب بتقنية متطورة",
+      "description": "متجر إلكتروني متقدم متخصص في بيع الملابس، يتميز بتصميم عصري أنيق وأداء عالٍ.",
+      "features": {
+        "frontend": "مبني على إطار عمل أمامي قوي لضمان الأداء السريع وتحسين محركات البحث، باستخدام TypeScript لضمان موثوقية الكود.",
+        "state_management": "إدارة الحالة مدعومة بـ Redux Toolkit، مما يضمن تجربة مستخدم سلسة.",
+        "shopping_cart": "يتضمن عربة تسوق ديناميكية مع تخزين المنتجات محليًا، مع نظام بحث وتصفية فعال لاكتشاف المنتجات بسهولة.",
+        "payment": "خيارات دفع آمنة عبر الإنترنت عبر Stripe أو PayPal، مع إشعارات تأكيد الطلب الآلية.",
+        "content_management": "يُدار باستخدام Strapi CMS، مدعوم بقاعدة بيانات PostgreSQL قوية لمعالجة المنتجات والمحتوى بكفاءة.",
+        "user_management": "يمكن للمستخدمين إنشاء حسابات لتتبع طلباتهم، بينما يمتلك المسؤولون لوحة تحكم بديهية لإدارة المخزون والمبيعات."
+      },
+      "future_enhancements": [
+        "توصيات المنتجات بمساعدة الذكاء الاصطناعي",
+        "التكامل مع خدمات الشحن الآلية",
+        "تطبيق جوال مبني باستخدام React Native لتوسيع نطاق السوق"
+      ],
+      "goal": "يقدم هذا المشروع حلاً مثاليًا لتجار التجزئة في مجال الملابس الذين يهدفون إلى توفير تجربة تسوق رقمية حديثة وسلسة."
+    }
+  },
+  "auth": {
+    "errors": {
+      "emailExists": "البريد الإلكتروني موجود بالفعل.",
+      "emailNotFound": "البريد الإلكتروني غير موجود.",
+      "passwordIncorrect": "كلمة المرور غير صحيحة.",
+      "unexpectedError": "حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى لاحقًا.",
+      "userNotFound": "المستخدم غير موجود."
+    },
+    "register": {
+      "loading": "جارٍ التسجيل...",
+      "submit": "تسجيل",
+      "name": {
+        "label": "الاسم",
+        "placeholder": "أدخل اسمك"
+      },
+      "email": {
+        "label": "البريد الإلكتروني",
+        "placeholder": "أدخل بريدك الإلكتروني"
+      },
+      "password": {
+        "label": "كلمة المرور",
+        "placeholder": "أدخل كلمة المرور"
+      },
+      "confirmPassword": {
+        "label": "تأكيد كلمة المرور",
+        "placeholder": "أكد كلمة المرور"
+      },
+      "title": "تسجيل حساب",
+      "haveAccount": "لديك حساب بالفعل؟",
+      "signIn": "تسجيل الدخول"
+    },
+    "login": {
+      "title": "تسجيل الدخول",
+      "noAccount": "ليس لديك حساب؟",
+      "signUp": "تسجيل",
+      "email": {
+        "label": "البريد الإلكتروني",
+        "placeholder": "أدخل بريدك الإلكتروني"
+      },
+      "password": {
+        "label": "كلمة المرور",
+        "placeholder": "أدخل كلمة المرور"
+      }
+    }
+  },
+  "validation": {
+    "passwordsDoNotMatch": "كلمات المرور غير متطابقة.",
+    "requiredName": "الاسم مطلوب.",
+    "requiredPassword": "كلمة المرور مطلوبة.",
+    "requiredEmail": "البريد الإلكتروني مطلوب.",
+    "validEmail": "يرجى إدخال بريد إلكتروني صالح.",
+    "nameRequired": "الاسم مطلوب.",
+    "passwordMaxLength": "يجب ألا تتجاوز كلمة المرور 20 حرفًا.",
+    "passwordMinLength": "يجب أن تكون كلمة المرور 6 أحرف على الأقل.",
+    "confirmpasswordRequired": "تأكيد كلمة المرور مطلوب.",
+    "passwordMismatch": "كلمات المرور غير متطابقة.",
+    "emailRequired": "البريد الإلكتروني مطلوب.",
+    "emailMaxLength": "يجب ألا يتجاوز البريد الإلكتروني 50 حرفًا.",
+    "emailMinLength": "يجب أن يكون البريد الإلكتروني 6 أحرف على الأقل.",
+    "emailPattern": "تنسيق البريد الإلكتروني غير صالح.",
+    "passwordRequired": "كلمة المرور مطلوبة."
+  },
+  "messages": {
+    "updatecategorySucesss": "تم تحديث الفئة بنجاح.",
+    "deleteUserSucess": "تم حذف المستخدم بنجاح.",
+    "updateProfileSucesss": "تم تحديث الملف الشخصي بنجاح.",
+    "productAdded": "تمت إضافة المنتج بنجاح.",
+    "categoryAdded": "تمت إضافة الفئة بنجاح.",
+    "deleteCategorySuccess": "تم حذف الفئة بنجاح.",
+    "updateCategorySuccess": "تم تحديث الفئة بنجاح.",
+    "updateProductSuccess": "تم تحديث المنتج بنجاح.",
+    "deleteProductSuccess": "تم حذف المنتج بنجاح.",
+    "updateProfileSuccess": "تم تحديث الملف الشخصي بنجاح.",
+    "profileUpdated": "تم تحديث الملف الشخصي بنجاح.",
+    "nameRequired": "الاسم مطلوب.",
+    "invalidEmail": "البريد الإلكتروني غير صالح.",
+    "userAlreadyExists": "المستخدم موجود بالفعل.",
+    "passwordsDoNotMatch": "كلمات المرور غير متطابقة.",
+    "missingCredentials": "يرجى إدخال البريد الإلكتروني وكلمة المرور.",
+    "success": "نجاح",
+    "error": "خطأ",
+    "warning": "تحذير",
+    "info": "معلومات",
+    "loginSuccess": "تم تسجيل الدخول بنجاح.",
+    "loginError": "فشل تسجيل الدخول. يرجى التحقق من البريد الإلكتروني وكلمة المرور.",
+    "logoutSuccess": "تم تسجيل الخروج بنجاح.",
+    "logoutError": "فشل تسجيل الخروج.",
+    "registerSuccess": "تم التسجيل بنجاح.",
+    "registerError": "فشل التسجيل. يرجى المحاولة مرة أخرى.",
+    "passwordMismatch": "كلمات المرور غير متطابقة.",
+    "passwordChangeSuccess": "تم تحديث كلمة المرور بنجاح.",
+    "passwordChangeError": "فشل تحديث كلمة المرور.",
+    "passwordResetSuccess": "تم إعادة تعيين كلمة المرور بنجاح.",
+    "userNotFound": "المستخدم غير موجود.",
+    "unexpectedError": "حدث خطأ غير متوقع.",
+    "incorrectPassword": "كلمة المرور غير صحيحة.",
+    "loginSuccessfully": "تم تسجيل الدخول بنجاح.",
+    "validationError": "فشل التحقق من الصحة.",
+    "imageUploadError": "فشل رفع الصورة.",
+    "productNotFound": "المنتج غير موجود."
+  },
+  "profile": {
+    "avatarAlt": "صورة الملف الشخصي",
+    "adminLabel": "الإدارة",
+    "saving": "جارٍ حفظ الملف الشخصي...",
+    "form": {
+      "name": {
+        "label": "الاسم",
+        "placeholder": "أدخل اسمك"
+      },
+      "email": {
+        "label": "البريد الإلكتروني",
+        "placeholder": "أدخل بريدك الإلكتروني"
+      },
+      "phone": {
+        "label": "الهاتف",
+        "placeholder": "أدخل رقم هاتفك",
+        "validation": {
+          "required": "رقم الهاتف مطلوب.",
+          "invalid": "يرجى إدخال رقم هاتف صالح.",
+          "pattern": "تنسيق رقم الهاتف غير صالح."
+        }
+      },
+      "address": {
+        "label": "العنوان",
+        "placeholder": "أدخل عنوانك"
+      },
+      "postalCode": {
+        "label": "الرمز البريدي",
+        "placeholder": "أدخل الرمز البريدي"
+      },
+      "city": {
+        "label": "المدينة",
+        "placeholder": "أدخل مدينتك"
+      },
+      "country": {
+        "label": "الدولة",
+        "placeholder": "أدخل دولتك"
+      },
+      "password": {
+        "label": "كلمة المرور",
+        "placeholder": "أدخل كلمة المرور"
+      },
+      "confirmPassword": {
+        "label": "تأكيد كلمة المرور",
+        "placeholder": "أكد كلمة المرور"
+      }
+    }
+  }
+}

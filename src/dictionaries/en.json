@@ -1,0 +1,289 @@
+{
+  "item": {
+    "title": "Item",
+    "description": "This is a description of the item.",
+    "categoryId": {
+      
+      "name": "Category"
+    }
+  },
+  "extrasIngredients": {
+    "title": "Extras & Ingredients",
+    "description": "Customize your order with our selection of extras and ingredients."
+  },
+  "menu": {
+    "title": "Menu",
+    "description": "Explore our delicious offerings!"
+  },
+  "noProductsAvailable": "No products available",
+  "noProductsFound": "No products found",
+  "buttons": {
+    "login": {
+      "submit": "Log in"
+    }
+  },
+  "create": "Create",
+  "save": "Save",
+  "delete": "Delete",
+  "cancel": "Cancel",
+  "sizes": "Sizes",
+  "name": "Name",
+  "extraPrice": "Extra Price",
+  "noCategoriesFound": "No categories found",
+  "admin": {
+    "menuItems": {
+      "edit": "Edit",
+      "imageValidation": {
+        "required": "Image is required.",
+        "invalid": "Invalid image format.",
+        "size": "Image size should be less than 2MB."
+      },
+      "createNewMenuItem": "Create New Menu Item",
+      "addItemSize": "Add Item Size",
+      "addExtraItem": "Add Extra Item"
+    },
+    "categories": {
+      "form": {
+        "category": {
+          "edit": "Edit Category",
+          "validation": {
+            "required": "Category is required.",
+            "invalid": "Invalid category format."
+          }
+        },
+        "image": {
+          "validation": {
+            "required": "Image is required.",
+            "invalid": "Invalid image format.",
+            "label": "Image",
+            "placeholder": "Upload category image"
+          }
+        },
+        "description": {
+          "validation": {
+            "required": "Category description is required."
+          },
+          "label": "Description",
+          "placeholder": "Enter category description"
+        },
+        "basePrice": {
+          "validation": {
+            "required": "Base price is required.",
+            "invalid": "Invalid base price format."
+          },
+          "label": "Base Price",
+          "placeholder": "Enter base price"
+        },
+        "editName": "Edit Name",
+        "name": {
+          "validation": {
+            "required": "Category name is required."
+          },
+          "label": "Category Name",
+          "placeholder": "Enter category name"
+        }
+      }
+    },
+    "tabs": {
+      "profile": "Profile",
+      "categories": "Categories",
+      "menuItems": "Menu Items",
+      "users": "Users",
+      "orders": "Orders"
+    }
+  },
+  "error": {
+    "404": "Page Not Found",
+    "500": "Internal Server Error",
+    "noUser": "No user data available",
+    "formErrors": {
+      "fieldErrors": "Field Errors"
+    }
+  },
+  "stores": {
+    "profile": {
+      "title": "Profile"
+    },
+    "Navbars": {
+      "home": "Home",
+      "about": "About",
+      "contact": "Contact",
+      "store": "Store",
+      "logo": "Logo",
+      "arabic": "Arabic",
+      "english": "English",
+      "Login": "Login",
+      "menu": "Menu",
+      "signOut": "Sign Out",
+      "admin": "Admin",
+      "profile": "Profile"
+    },
+    "store": {
+      "name": "Computer Electronics Store with Cutting-Edge Technology",
+      "description": "An advanced online store specializing in selling clothing, featuring a sleek modern design and high performance.",
+      "features": {
+        "frontend": "Built on a robust front-end framework to ensure fast performance and SEO optimization, utilizing TypeScript for code reliability.",
+        "state_management": "State management powered by Redux Toolkit, ensuring a seamless user experience.",
+        "shopping_cart": "Includes a dynamic shopping cart with local product storage, along with an efficient search and filtering system for easy product discovery.",
+        "payment": "Secure online payment options via Stripe or PayPal, with automated order confirmation notifications.",
+        "content_management": "Managed using Strapi CMS, backed by a powerful PostgreSQL database for efficient product and content handling.",
+        "user_management": "Users can create accounts to track their orders, while administrators have access to an intuitive dashboard for inventory and sales management."
+      },
+      "future_enhancements": [
+        "AI-powered product recommendations",
+        "Integration with automated shipping services",
+        "A mobile application built with React Native to expand market reach"
+      ],
+      "goal": "This project offers an ideal solution for clothing retailers aiming to provide a modern and seamless digital shopping experience."
+    }
+  },
+  "auth": {
+    "errors": {
+      "emailExists": "Email already exists.",
+      "emailNotFound": "Email not found.",
+      "passwordIncorrect": "Password is incorrect.",
+      "unexpectedError": "An unexpected error occurred. Please try again later.",
+      "userNotFound": "User not found."
+    },
+    "register": {
+      "loading": "Signing up...",
+      "submit": "Sign Up",
+      "name": {
+        "label": "Name",
+        "placeholder": "Enter your name"
+      },
+      "email": {
+        "label": "Email Address",
+        "placeholder": "Enter your email"
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "Enter your password"
+      },
+      "confirmPassword": {
+        "label": "Confirm Password",
+        "placeholder": "Confirm your password"
+      },
+      "title": "Sign Up",
+      "haveAccount": "Already have an account?",
+      "signIn": "Sign in"
+    },
+    "login": {
+      "title": "Login",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign up",
+      "email": {
+        "label": "Email Address",
+        "placeholder": "Enter your email"
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "Enter your password"
+      }
+    }
+  },
+  "validation": {
+    "passwordsDoNotMatch": "Passwords do not match.",
+    "requiredName": "Name is required.",
+    "requiredPassword": "Password is required.",
+    "requiredEmail": "Email is required.",
+    "validEmail": "Please enter a valid email address.",
+    "nameRequired": "Name is required.",
+    "passwordMaxLength": "Password must not exceed 20 characters.",
+    "passwordMinLength": "Password must be at least 6 characters long.",
+    "confirmpasswordRequired": "Confirm Password is required.",
+    "passwordMismatch": "Passwords do not match.",
+    "emailRequired": "Email is required.",
+    "emailMaxLength": "Email must not exceed 50 characters.",
+    "emailMinLength": "Email must be at least 6 characters long.",
+    "emailPattern": "Invalid email format.",
+    "passwordRequired": "Password is required."
+  },
+  "messages": {
+    "updatecategorySucess": "Category updated successfully.",
+    "deleteUserSucess": "User deleted successfully.",
+    "updateProfileSucesss": "Profile updated successfully.",
+    "productAdded": "Product added successfully.",
+    "categoryAdded": "Category added successfully.",
+    "deleteCategorySuccess": "Category deleted successfully.",
+    "updateCategorySuccess": "Category updated successfully.",
+    "updateProductSuccess": "Product updated successfully.",
+    "deleteProductSuccess": "Product deleted successfully.",
+    "updateProfileSuccess": "Profile updated successfully.",
+    "profileUpdated": "Profile updated successfully.",
+    "nameRequired": "Name is required.",
+    "invalidEmail": "Invalid email.",
+    "userAlreadyExists": "User already exists.",
+    "passwordsDoNotMatch": "Passwords do not match.",
+    "missingCredentials": "Please enter your email and password.",
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Information",
+    "loginSuccess": "Successfully logged in.",
+    "loginError": "Login failed. Please check your email and password.",
+    "logoutSuccess": "Successfully logged out.",
+    "logoutError": "Logout failed.",
+    "registerSuccess": "Registration completed successfully.",
+    "registerError": "Registration failed. Please try again.",
+    "passwordMismatch": "Passwords do not match.",
+    "passwordChangeSuccess": "Password updated successfully.",
+    "passwordChangeError": "Failed to update password.",
+    "passwordResetSuccess": "Password reset successfully.",
+    "userNotFound": "User not found.",
+    "unexpectedError": "An unexpected error occurred.",
+    "incorrectPassword": "Incorrect password.",
+    "loginSuccessfully": "Logged in successfully.",
+    "validationError": "Validation failed.",
+    "imageUploadError": "Failed to upload image.",
+    "productNotFound": "Product not found."
+  },
+  "profile": {
+    "avatarAlt": "Profile picture",
+    "adminLabel": "Admin",
+    "saving": "Saving profile...",
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Enter your name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter your email"
+      },
+      "phone": {
+        "label": "Phone",
+        "placeholder": "Enter your phone number",
+        "validation": {
+          "required": "Phone number is required.",
+          "invalid": "Please enter a valid phone number.",
+          "pattern": "Invalid phone number format."
+        }
+      },
+      "address": {
+        "label": "Address",
+        "placeholder": "Enter your address"
+      },
+      "postalCode": {
+        "label": "Postal Code",
+        "placeholder": "Enter your postal code"
+      },
+      "city": {
+        "label": "City",
+        "placeholder": "Enter your city"
+      },
+      "country": {
+        "label": "Country",
+        "placeholder": "Enter your country"
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "Enter your password"
+      },
+      "confirmPassword": {
+        "label": "Confirm Password",
+        "placeholder": "Confirm your password"
+      }
+    }
+  }
+}
