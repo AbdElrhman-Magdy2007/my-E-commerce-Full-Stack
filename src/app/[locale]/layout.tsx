@@ -1,112 +1,42 @@
-// /* eslint-disable react/jsx-no-undef */
-
-
-// import Header from "@/components/header";
-// import { Directions, Languages } from "@/constants/enums";
-// import { Locale } from "@/i18n.config";
-// import ReduxProvider from "@/providers/ReduxProvider";
-// import type { Metadata } from "next";
-// import { Inter, Roboto, Cairo, Poppins } from "next/font/google";
-// import "./globals.css";
-// import { Toaster } from "@/components/ui/sonner";
-// import NextAuthSessionProvider from "@/providers/NextAuthSessionProvider";
-// import Footer from "@/components/header/Footer";
-// import PageLoader from "@/components/PageLoader"; // ✅ تمت الإضافة
-
-// // Font configurations
-// const roboto = Roboto({
-//   subsets: ["latin"],
-//   weight: ["400", "500", "700"],
-//   preload: true,
-// });
-
-// const cairo = Cairo({
-//   subsets: ["latin", "arabic"],
-//   weight: ["400", "500", "700"],
-//   preload: true,
-// });
-
-// const inter = Inter({
-//   variable: "--font-inter",
-//   subsets: ["latin"],
-//   preload: true,
-// });
-
-// const poppins = Poppins({
-//   subsets: ["latin"],
-//   weight: ["400", "500", "700"],
-//   variable: "--font-poppins",
-//   preload: true,
-// });
-
-// // Metadata
-// export const metadata: Metadata = {
-//   title: "Shopping Cart App",
-//   description: "A multilingual shopping cart application built with Next.js",
-// };
-
-// // Generate static params for supported locales
-// export async function generateStaticParams() {
-//   return [
-//     { locale: Languages.ENGLISH },
-//     { locale: Languages.ARABIC },
-//   ];
-// }
-
-// // Root Layout Component
-// export default async function RootLayout({
-//   params,
-//   children,
-// }: Readonly<{
-//   children: React.ReactNode;
-//   params: Promise<{ locale: Locale }>;
-// }>) {
-//   const { locale } = await params;
-//   const isArabic = locale === Languages.ARABIC;
-
-//   return (
-//     <html lang={locale} dir={isArabic ? Directions.RTL : Directions.LTR}>
-//       <body
-//         className={`${inter.variable} ${poppins.variable} ${
-//           isArabic ? cairo.className : roboto.className
-//         } text-gray-100 bg-black dark:bg-gray-900`}
-//       >
-//         <NextAuthSessionProvider>
-//           <ReduxProvider>
-//             <Header />
-//             <PageLoader /> {/* ✅ تمت الإضافة هنا */}
-//             {children}
-//             <Toaster />
-//             <Footer locale={locale} />
-//           </ReduxProvider>
-//         </NextAuthSessionProvider>
-//       </body>
-//     </html>
-//   );
-// }
-// src/app/[locale]/layout.tsx
+import { ReactNode } from "react";
 import Header from "@/components/header";
 import { Directions, Languages } from "@/constants/enums";
 import { Locale } from "@/i18n.config";
 import ReduxProvider from "@/providers/ReduxProvider";
-import type { Metadata } from "next";
-import { Inter, Roboto, Cairo, Poppins } from "next/font/google";
-import "./globals.css";
+import { Inter, Roboto, Poppins, Noto_Sans_Arabic } from "next/font/google";
+import "./globals.css"; // Correct path relative to src/app/[locale]
 import { Toaster } from "@/components/ui/sonner";
 import NextAuthSessionProvider from "@/providers/NextAuthSessionProvider";
 import Footer from "@/components/header/Footer";
 import PageLoader from "@/components/PageLoader";
 
-const roboto = Roboto({ subsets: ["latin"], weight: ["400", "500", "700"], preload: true });
-const cairo = Cairo({ subsets: ["latin", "arabic"], weight: ["400", "500", "700"], preload: true });
-const inter = Inter({ variable: "--font-inter", subsets: ["latin"], preload: true });
-const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500", "700"], variable: "--font-poppins", preload: true });
+// Fonts
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  display: "swap",
+});
 
-export const metadata: Metadata = {
-  title: "Shopping Cart App",
-  description: "A multilingual shopping cart application built with Next.js",
-};
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  display: "swap",
+});
 
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-poppins",
+  display: "swap",
+});
+
+const notoSansArabic = Noto_Sans_Arabic({
+  subsets: ["arabic"],
+  weight: ["400", "500", "700"],
+  display: "swap",
+});
+
+// Generate static params for supported locales
 export async function generateStaticParams() {
   return [
     { locale: Languages.ENGLISH },
@@ -114,29 +44,46 @@ export async function generateStaticParams() {
   ];
 }
 
-export default async function RootLayout({
+// Generate dynamic metadata
+export async function generateMetadata({
   params,
-  children,
-}: Readonly<{
-  children: React.ReactNode;
+}: {
   params: Promise<{ locale: Locale }>;
-}>) {
+}) {
   const { locale } = await params;
+  return {
+    title: locale === Languages.ARABIC ? "تطبيق عربة التسوق" : "Shopping Cart App",
+    description:
+      locale === Languages.ARABIC
+        ? "تطبيق عربة تسوق متعدد اللغات مبني باستخدام Next.js"
+        : "A multilingual shopping cart application built with Next.js",
+  };
+}
+
+// Root Layout Component
+export default function RootLayout({
+  children,
+  params,
+}: {
+  children: ReactNode;
+  params: { locale: Locale };
+}) {
+  const { locale } = params;
   const isArabic = locale === Languages.ARABIC;
 
   return (
     <html lang={locale} dir={isArabic ? Directions.RTL : Directions.LTR}>
       <body
         className={`${inter.variable} ${poppins.variable} ${
-          isArabic ? cairo.className : roboto.className
+          isArabic ? notoSansArabic.className : roboto.className
         } text-gray-100 bg-black dark:bg-gray-900`}
       >
         <NextAuthSessionProvider>
           <ReduxProvider>
             <Header />
             <PageLoader />
-            {children}
-            <Toaster />
+            <main>{children}</main>
+            <Toaster dir={isArabic ? "rtl" : "ltr"} position="top-right" />
             <Footer locale={locale} />
           </ReduxProvider>
         </NextAuthSessionProvider>
@@ -144,3 +91,8 @@ export default async function RootLayout({
     </html>
   );
 }
+
+
+
+
+/////////////////////////////////////////////////////////////////

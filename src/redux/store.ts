@@ -6,8 +6,9 @@ export const store = configureStore({
   reducer: {
     cart: cartReducer,
   },
-  devTools: process.env.NODE_ENV !== Environment.DEV,
+  devTools: process.env.NODE_ENV === Environment.DEV, // Enable DevTools in development
 });
 
+// Export types for TypeScript
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;

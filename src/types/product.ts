@@ -8,3 +8,15 @@ export type ProductWithRelations = Prisma.ProductGetPayload <{
         orders: true,
     };
 }>
+
+export type CategoryWithProducts = Prisma.CategoryGetPayload<{
+    include: {
+        products: {
+            include: {
+                category: true,
+                sizes: true,
+                extras: true,
+            }
+        }
+    }
+}>
