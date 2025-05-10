@@ -1,4 +1,3 @@
-
 "use client";
 
 import Menultem from "./Menultem";
@@ -92,19 +91,18 @@ function Menu({ items, isLoading = false }: MenuProps) {
       ))}
     </ul>
   ) : (
-    console.log("No menu items available")
-    // <div
-    //   className="flex flex-col items-center justify-center py-16 bg-black rounded-xl border border-indigo-800"
-    //   role="alert"
-    //   aria-label="No menu items available"
-    // >
-    //   <h2 className="text-2xl sm:text-3xl font-semibold text-indigo-700">
-    //     لا توجد عناصر متاحة
-    //   </h2>
-    //   <p className="mt-2 text-sm sm:text-base text-indigo-700">
-    //     يبدو أن القائمة فارغة حاليًا. تحقق لاحقًا!
-    //   </p>
-    // </div>
+    <div
+      className="flex flex-col items-center justify-center py-16 bg-black rounded-xl border border-indigo-800"
+      role="alert"
+      aria-label="No menu items available"
+    >
+      <h2 className="text-2xl sm:text-3xl font-semibold text-indigo-700">
+        لا توجد عناصر متاحة
+      </h2>
+      <p className="mt-2 text-sm sm:text-base text-indigo-700">
+        يبدو أن القائمة فارغة حاليًا. تحقق لاحقًا!
+      </p>
+    </div>
   );
 }
 

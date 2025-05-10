@@ -103,7 +103,7 @@ export default async function MenuPage({ params }: Props) {
               {translations.noProductsFound || "No products found"}
             </h3>
             <p className="text-sm sm:text-base text-indigo-700 max-w-md text-center">
-              {translations.noProductsMessage ||
+              {translations.noProductsAvailable ||
                 "It looks like we don't have any products available right now. Check back later!"}
             </p>
           </div>
