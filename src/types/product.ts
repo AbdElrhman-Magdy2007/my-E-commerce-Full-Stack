@@ -5,7 +5,7 @@ export type ProductWithRelations = Prisma.ProductGetPayload<{
         sizes: true,
         extras: true,
         category: true,
-        orders?: true,
+        orders: true,
     };
 }>
 
@@ -16,6 +16,7 @@ export type CategoryWithProducts = Prisma.CategoryGetPayload<{
                 category: true,
                 sizes: true,
                 extras: true,
+                orders: true,
             }
         }
     }

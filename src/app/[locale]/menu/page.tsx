@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-undef */
 import { Locale } from "@/i18n.config";
 import getTrans from "@/lib/translation";
 import { getProductsByCategory } from "@/server/db/products";
@@ -8,16 +7,18 @@ import { Suspense } from "react";
 import Skeleton from "react-loading-skeleton";
 import Image from "next/image";
 
-type Props = {
-  params: { locale: Locale }
-  searchParams: { [key: string]: string | string[] | undefined }
+interface PageProps {
+  params: {
+    locale: Locale;
+  };
+  searchParams?: { [key: string]: string | string[] | undefined };
 }
 
 /**
  * صفحة القائمة التي تعرض الفئات ومنتجاتها بناءً على اللغة
  * @param params - معلمات المسار تحتوي على اللغة (locale)
  */
-export default async function MenuPage({ params }: Props) {
+export default async function MenuPage({ params }: PageProps) {
   const { locale } = params;
 
   console.time("fetching"); // إضافة لحساب وقت تحميل البيانات

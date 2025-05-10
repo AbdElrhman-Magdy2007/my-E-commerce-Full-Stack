@@ -1,6 +1,6 @@
 "use client";
 
-import Menultem from "./Menultem";
+import MenuItem from "./MenuItem";
 import { ProductWithRelations } from "@/types/product";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
@@ -87,7 +87,7 @@ function Menu({ items, isLoading = false }: MenuProps) {
       aria-label="Menu items list"
     >
       {memoizedItems.map((item) => (
-        <Menultem key={item.id} item={item} />
+        <MenuItem key={item.id} item={item} />
       ))}
     </ul>
   ) : (

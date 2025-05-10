@@ -84,4 +84,4 @@ function MenuItem({ item, isLoading = false }: MenuItemProps) {
   );
 }
 
-export default MenuItem;
+export default MenuItem; 

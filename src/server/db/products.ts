@@ -24,6 +24,7 @@ export async function getAllProducts(): Promise<ProductWithRelations[]> {
         category: true,
         sizes: true,
         extras: true,
+        orders: true,
       },
       orderBy: {
         name: "asc",
@@ -72,6 +73,7 @@ export async function getProducts(options: GetProductsOptions = {}): Promise<Pro
         category: true,
         sizes: true,
         extras: true,
+        orders: true,
       },
       orderBy: {
         [sortBy]: order,
@@ -144,6 +146,7 @@ export async function getBestSellers(limit?: number): Promise<ProductWithRelatio
         category: true,
         sizes: true,
         extras: true,
+        orders: true,
       },
       take: limit,
     });
@@ -160,7 +163,6 @@ export async function getBestSellers(limit?: number): Promise<ProductWithRelatio
 }
 
 /**
- * 
  * جلب جميع الفئات مع المنتجات المرتبطة بها
  * @returns قائمة الفئات مع منتجاتها
  * @throws خطأ إذا فشل الجلب
@@ -174,6 +176,7 @@ export async function getProductsByCategory(): Promise<CategoryWithProducts[]> {
             category: true,
             sizes: true,
             extras: true,
+            orders: true,
           },
         },
       },
@@ -229,6 +232,7 @@ export async function getProductsByCategoryId(
         category: true,
         sizes: true,
         extras: true,
+        orders: true,
       },
       orderBy: {
         [sortBy]: order,
